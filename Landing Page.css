@@ -3,22 +3,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100vh;
 }
 
 #typedOutName {
-    flex: 1;
+    padding-top: 10vh;
+    padding-bottom: 18vh
+}
+
+#typedOutName h1, #typedOutName h2 {
+    font-family: "benton-sans-compressed", sans-serif;
+    letter-spacing: 1px;
+    font-size: max(25px, 3.3vw);
+    margin: 0;
+    text-align: center;
 }
 
 #mainNavButtons {
-    flex: 3;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15vh;
+    padding-bottom: 10vh;
 }
 
 .button {
     margin: 10px;
-    padding: 10px;
+    padding: 10px 10vw;
+    font-family: "benton-sans-compressed", sans-serif;
+    font-size: max(15px, 1.8vw);
 }
