@@ -29,9 +29,49 @@
     padding-bottom: 10vh;
 }
 
+.buttonWrapper {
+    display: flex;
+}
+
 .button {
-    margin: 10px;
+    margin: 40px;
     padding: 10px 10vw;
     font-family: "benton-sans-compressed", sans-serif;
     font-size: max(15px, 1.8vw);
+    max-width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: transparent;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    /*border: 3px solid #333;*/
+    overflow: hidden;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #7BC17E;
+    z-index: -1;
+    transition: width 300ms ease-in-out;
+}
+
+.button:hover {
+    color: white;
+    transform: scale(1.1);
+    &:after {
+        width: 110%;
+    }
 }
