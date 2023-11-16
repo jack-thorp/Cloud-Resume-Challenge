@@ -63,9 +63,16 @@
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #7BC17E;
     z-index: -1;
     transition: width 300ms ease-in-out;
+}
+
+.aboutMeButton:after{
+    background: #99BADD;
+}
+
+.resumeButton:after{
+    background: #7BC17E;
 }
 
 .button:hover {
