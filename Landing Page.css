@@ -9,41 +9,55 @@
 
 #typedOutName {
     padding-top: 10vh;
-}
-
-.typewriter {
+    padding-bottom: 18vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .typewriter {
+    font-family: "benton-sans-compressed", sans-serif;
+    letter-spacing: 0.15em;
+    font-size: max(25px, 3.3vw);
+    margin: 0;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    font-family: "benton-sans-compressed", sans-serif;
-    font-size: max(25px, 2.5vw);
-    letter-spacing: 0.15em;
-    position: relative;
-}
-
-.typewriter::after {
+  }
+  
+  .typewriter::after {
     content: attr(data-text);
     display: inline-block;
     vertical-align: middle;
     width: 0;
     overflow: hidden;
     border-right: 0.15em solid blue;
-    animation: typing 3.5s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
-}
+    animation: typing 3.5s steps(30, end) forwards, blink-caret 0.5s step-end 3.5s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+      border-right: 0.15em solid blue;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
 
-.typewriter.thorp::after {
-    animation-delay: 3.5s; /* Delayed by the duration of the "Jack" animation */
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-}
+  #typedOutName h1:last-child::after {
+    animation-delay: 4s;
+  }
 
 #mainNavButtons {
     display: flex;
