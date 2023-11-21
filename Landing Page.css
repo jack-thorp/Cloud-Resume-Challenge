@@ -5,19 +5,21 @@
     justify-content: center;
     text-align: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 /*Name Typing Out Styling and box*/
 .shapeSection {
     position: relative;
-    height: max(200px, 16vw);
-    width: max(200px, 16vw);
+    height: max(250px, 22vw);
+    width: max(250px, 22vw);
     text-align: center;
-    transform: rotate(45deg);
-    border: 3px solid orange;
+    transform: rotate(45deg) scale(1);
+    border: 3px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -50px;
 }
 
 #nameHeader {
@@ -27,14 +29,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(1);
     text-align: center;
 }
 
 .typewriter {
     font-family: "benton-sans-compressed", sans-serif;
     letter-spacing: 0.15em;
-    font-size: max(25px, 3.3vw);
+    font-size: max(1.5rem, 2.7vw);
     margin: 0;
     text-align: center;
     overflow: hidden;
@@ -102,14 +104,15 @@
 
 .buttonWrapper {
     display: flex;
-    margin: 60px;
+    padding-top: 5%;
+    margin-top: 5%;
 }
 
 .button {
     margin: 40px;
     padding: 10px 10vw;
     font-family: "benton-sans-compressed", sans-serif;
-    font-size: max(15px, 1.8vw);
+    font-size: max(15px, 1.3vw);
     max-width: 250px;
     height: 50px;
     line-height: 50px;
