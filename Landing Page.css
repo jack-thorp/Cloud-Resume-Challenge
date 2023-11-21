@@ -7,30 +7,30 @@
     height: 100vh;
 }
 
-/*line animation*/
-#lineAnimation {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    clip-path: polygon(0 0, 0 100%, 0% 100%, 0% 0%);
-    animation: drawLine 2s linear forwards;
+/*Name Typing Out Styling and box*/
+.shapeSection {
+    position: relative;
+    height: max(200px, 16vw);
+    width: max(200px, 16vw);
+    text-align: center;
+    transform: rotate(45deg);
+    border: 3px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes drawLine {
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-}
-
-/*Name Typing Out Styling*/
-#typedOutName {
-    padding-top: 10vh;
-    padding-bottom: 18vh;
+#nameHeader {
+    padding: 5vh 0 8vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-45deg);
+    text-align: center;
 }
-  
+
 .typewriter {
     font-family: "benton-sans-compressed", sans-serif;
     letter-spacing: 0.15em;
@@ -39,9 +39,10 @@
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
     margin: 0 auto;
 }
-  
+
 .typewriter::after {
     content: attr(data-text);
     display: inline-block;
@@ -51,7 +52,7 @@
     border-right: 0.15em solid transparent;
     animation: typing 1s steps(30, end) forwards, blink-caret 0.5s step-end 2.5s infinite;
 }
-  
+
 @keyframes typing {
     from {
         width: 0;
@@ -94,22 +95,14 @@
     }
 }
 
- #typedOutName h1:last-child::after {
+#nameHeader h1:last-child::after {
     animation-delay: 1.1s;
 }
 
-/*Button Styling*/
-#mainNavButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 15vh;
-    padding-bottom: 10vh;
-}
 
 .buttonWrapper {
     display: flex;
+    margin: 60px;
 }
 
 .button {
