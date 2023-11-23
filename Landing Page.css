@@ -15,11 +15,17 @@
     width: max(250px, 22vw);
     text-align: center;
     transform: rotate(45deg) scale(1);
-    border: 3px solid grey;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -80px;
+    box-shadow: 0 0 1px black;
+    /*had to place the background as -45deg, gonna clean up later*/
+    background-image: url('images/csgOG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #nameHeader {
@@ -34,15 +40,17 @@
 }
 
 .typewriter {
-    font-family: "benton-sans-compressed", sans-serif;
+    font-family: "Raleway";
     letter-spacing: 0.15em;
-    font-size: max(1.5rem, 2.7vw);
+    font-size: max(2.3rem, 3.5vw);
     margin: 0;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
     margin: 0 auto;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .typewriter::after {
@@ -58,42 +66,42 @@
 @keyframes typing {
     from {
         width: 0;
-        border-right: 0.15em solid black;
+        border-right: 0.15em solid white;
     }
     to {
-        border-right: 0.15em solid black;
+        border-right: 0.15em solid white;
     }
     25% {
         border-right: 0.15em transparent;
     }
     50% {
-        border-right: 0.15em solid black;
+        border-right: 0.15em solid white;
     }
     75% {
         border-right: 0.15em solid transparent;
     }
     100% {
         width: 100%;
-        border-right: 0.15em solid black;
+        border-right: 0.15em solid white;
     }
 }
 
 @keyframes blink-caret {
     from,
     to {
-        border-color: black;
+        border-color: white;
     }
     25% {
         border-color: transparent;
     }
     50% {
-        border-color: black;
+        border-color: white;
     }
     75% {
         border-color: transparent;
     }
     100% {
-        border-color: black;
+        border-color: white;
     }
 }
 
