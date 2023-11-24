@@ -50,15 +50,43 @@
     background-color: white;
 }
 
+.header{
+    display: inline-block;
+}
+
+.socialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    gap: 10px;
+    top: 10px;
+    right: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.socialContainer a img{
+    width: max(30px,1.8vw);
+    height: auto;
+    opacity: .5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.socialContainer a img:hover {
+    opacity: 1; 
+}
+
 .title {
     display: flex;
     flex-direction: row;
     text-align: left;
-    overflow: hidden;
     font-family: sans-serif;
+    overflow:hidden;
     font-size: max(8px, 0.5vw);
     font-style: italic;
     align-items: center;
+    padding-left: 10px;
 }
 
 .titleName{
@@ -68,6 +96,12 @@
 .titleDesc {
     color: #aaa;
     margin-left: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .titleDesc {
+        display: none;
+    }
 }
 
 .landingPage {
