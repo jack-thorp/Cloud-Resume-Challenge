@@ -214,11 +214,6 @@
     animation-delay: 4s;
 }
 
-/*#nameHeader h1:last-child::after {
-    animation-delay: 1.1s;
-}*/
-
-
 .buttonWrapper {
     display: none;
     padding-top: 5%;
