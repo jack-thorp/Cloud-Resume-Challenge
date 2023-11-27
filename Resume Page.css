@@ -3,7 +3,9 @@
 }
 
 .header{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
 }
 
 .socialContainer{
@@ -11,11 +13,8 @@
     align-items: center;
     justify-content: flex-end;
     position: fixed;
-    gap: 10px;
+    gap: .2vw;
     top: 10px;
-    right: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
 }
 
 .socialContainer a img{
@@ -41,19 +40,30 @@
     padding-left: 10px;
 }
 
-.titleName{
+.titleName{ 
     color: #626262
 }
 
-.titleDesc {
-    color: #aaa;
-    margin-left: 3px;
+.navigationButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-@media only screen and (max-width: 600px) {
-    .titleDesc {
-        display: none;
-    }
+.navigationButtons button {
+    color: #aaa;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.navigationButtons button:hover {
+    color: #626262;
 }
 
 .pageTitle {
@@ -67,14 +77,35 @@
 
 .resumeContent {
     display: flex;
+    flex-direction: column;
 }
 
-.leftContent {
-    flex: 2;
+.resumeIntro, .experienceContent {
     padding: 20px;
 }
 
-.leftContent h3 {
+.resumeIntro {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumePic {
+    max-width: 100%;
+    height: auto;
+}
+
+.resumeSummary {
+    padding-left: 20vw;
+}
+
+.experienceContent {
+    flex: 2;
+    padding: 15px;
+}
+
+.experienceContent h3 {
     color: #7BC17E;
     font-size: max(22px,1.8vw);
     margin: 0 0 10px;
@@ -91,8 +122,9 @@
 
 .jobSummary img {
     margin-right: 10px;
-    width: max(20px,7vw);
-    height: auto;
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
 }
 
 .jobSummary h4 {
@@ -102,7 +134,7 @@
 }
 
 .jobDetails {
-    margin-left: 15%;
+    margin-left: 90px;
 }
 
 .jobDetails h5 {
@@ -113,7 +145,6 @@
     font-style: italic;
 }
 
-.rightContent {
-    flex: 1;
-    padding: 20px;
+.jobDetails p {
+    margin-left: 20px;
 }
