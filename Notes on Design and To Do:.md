@@ -23,9 +23,11 @@ About Me:
     - Then a long line to scroll through a few photos
         - maybe explore other ways to present pics
 
+    - include a signature at the end?
+
     - HEY! Welcome to the little corner of the web where you can learn about me :). 
 
 Resume:
-    - Use the green from the button
     - Resume download?
+    - broke up into section
     - 

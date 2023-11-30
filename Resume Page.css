@@ -5,14 +5,13 @@
 .header{
     display: flex;
     align-items: center;
-    padding-right: 100px;
+    padding-right: 10px;
 }
 
 .socialContainer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: fixed;
     gap: .2vw;
     top: 10px;
 }
@@ -97,7 +96,17 @@
 }
 
 .resumeSummary {
-    padding-left: 20vw;
+    padding-left: 10vw;
+    background-color: #f5f5f5;
+    padding: 20px;
+    width: min(900px,100vw);
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.activeToolbeltTitle {
+    color: #7BC17E;
+    font-size: max(20px,1.5vw);
 }
 
 .experienceContent {
