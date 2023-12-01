@@ -157,3 +157,8 @@
 .jobDetails p {
     margin-left: 20px;
 }
+
+.jobDate {
+    color: #7BC17E;
+    margin-left: 8px;
+}
