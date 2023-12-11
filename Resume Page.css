@@ -219,3 +219,38 @@ ul {
         width: 110%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .resumeIntro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resumeSummary {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .myActiveToolbelt {
+        margin-top: 20px;
+    }
+
+    .jobDetails h5 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jobDate {
+        margin-left: 8px;
+    }
+
+    .pageTitleContainter {
+        font-size: 30px;
+    }
+
+    .navigationButtons button:nth-child(2) {
+        content: "About";
+    }
+}
