@@ -19,11 +19,16 @@ window.addEventListener('DOMContentLoaded', ()=>{
                     intro.classList.add('fade');
                 })
             })
-        },2000)
+        },2000);
 
         setTimeout(()=>{
             introPage.style.top='-100vh';
             buttonWrapper.style.display = 'flex'; 
-        },2300)
-    })
-})
+        },2300);
+    });
+
+    const resumeButton = document.querySelector('.resumeButton');
+    resumeButton.addEventListener('click', () => {
+        window.location.href = 'Resume Page.html';
+    });
+});
