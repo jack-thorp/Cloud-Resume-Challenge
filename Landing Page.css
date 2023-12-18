@@ -22,6 +22,19 @@
     transform: translate(-50%, -50%);
     color: white;
     display: flex;
+    overflow: hidden;
+}
+
+.animationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animationIntro {
+    width: 200px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .intro {
