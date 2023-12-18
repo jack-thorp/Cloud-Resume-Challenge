@@ -15,6 +15,7 @@ Resume:
 Landing Page:
     - Different Font?
     - Cool transition to other pages??
+    - look at maybe different animations
 
 About Me:
     - Use the blue from the button

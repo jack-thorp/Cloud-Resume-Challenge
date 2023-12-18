@@ -37,27 +37,6 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-.intro {
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-    color: white;
-    padding-left: 10px;
-}
-
-.intro.active {
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out .5s;
-}
-
-.intro.fade {
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out .5s;
-}
-
 /*Actual Landing Page*/
 .landingPageBody {
     background-color: white;
