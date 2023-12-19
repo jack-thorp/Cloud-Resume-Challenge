@@ -1,0 +1,66 @@
+.aboutMeBody {
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.socialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .2vw;
+    top: 10px;
+}
+
+.socialContainer a img{
+    width: max(30px,1.8vw);
+    height: auto;
+    opacity: .5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.socialContainer a img:hover {
+    opacity: 1; 
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-family: sans-serif;
+    overflow:hidden;
+    font-size: max(8px, 0.5vw);
+    font-style: italic;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.titleName{ 
+    color: #626262
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.navigationButtons button {
+    color: #aaa;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.navigationButtons button:hover {
+    color: #626262;
+}
