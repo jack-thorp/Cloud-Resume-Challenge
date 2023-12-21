@@ -40,7 +40,7 @@
 }
 
 .titleName{ 
-    color: #626262
+    color: #626262;
 }
 
 .navigationButtons {
@@ -63,4 +63,55 @@
 
 .navigationButtons button:hover {
     color: #626262;
+}
+
+.openingSection {
+    padding-left: 70px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.headerContainer {
+    margin: 0 auto;
+}
+
+.headerContainer h2 {
+    padding-top: 40px;
+    color: #99BADD;
+    font-size: 115px;
+    margin-bottom: 10px;
+}
+
+.headerContainer p {
+    color: #626262;
+    font-size: 50px;
+    margin-top: 0;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutMeMainPic {
+    text-align: center;
+}
+
+.aboutPic {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .openingSection {
+        padding-left: 20px;
+    }
+
+    .headerContainer h2 {
+        padding-top: 40px;
+        font-size: 90px;
+    }
+
+    .headerContainer p {
+        font-size: 40px;
+        margin-top: 10px;
+    }
 }
