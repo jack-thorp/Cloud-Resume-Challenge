@@ -93,11 +93,20 @@
 
 .aboutMeMainPic {
     text-align: center;
+    padding-top: 30px;
+    overflow: hidden;
 }
 
 .aboutPic {
-    max-width: 100%;
+    width:80%;
+    max-width: 1200px;
     height: auto;
+    border-radius:10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.aboutMeMainPic.enlarged .aboutPic {
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 600px) {
