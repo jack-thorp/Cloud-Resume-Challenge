@@ -16,18 +16,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
     homeButton.addEventListener('click', () => {
         window.location.href = 'Landing Page.html';
-        console.log('Navigating to Home Page');
     });
 
     // Handle About button click
     aboutButton.addEventListener('click', () => {
-        window.location.href = 'Resume Page.html';
-        console.log('About button clicked');
+        window.location.href = 'About Me.html';
     });
 
     // Handle Resume button click
     resumeButton.addEventListener('click', () => {
-        window.location.href = 'Landing Page.html';
-        console.log('Resume button clicked');
+        window.location.href = 'Resume Page.html';
     });
 });

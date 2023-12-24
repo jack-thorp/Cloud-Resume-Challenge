@@ -31,4 +31,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
     resumeButton.addEventListener('click', () => {
         window.location.href = 'Resume Page.html';
     });
+
+    const aboutMeButton = document.querySelector('.aboutMeButton');
+    aboutMeButton.addEventListener('click', () => {
+        window.location.href = 'About Me.html';
+    });
 });
