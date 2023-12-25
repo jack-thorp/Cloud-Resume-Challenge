@@ -86,7 +86,8 @@
 }
 
 .titleDesc {
-    color: #aaa;
+    /*color: #aaa;*/
+    color: #C0AD8C;
     margin-left: 3px;
 }
 
@@ -109,15 +110,15 @@
 
 .shapeSection {
     position: relative;
-    height: max(250px, 22vw);
-    width: max(250px, 22vw);
+    height: max(250px, 26vw);
+    width: max(250px, 26vw);
     text-align: center;
     transform: rotate(45deg) scale(1);
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -80px;
+    margin-top: -60px;
     box-shadow: 0 0 6px grey;
     /*had to place the background as -45deg, gonna clean up later*/
     background-image: url('images/csgOG.png');
@@ -148,6 +149,7 @@
     white-space: nowrap;
     margin: 0 auto;
     overflow: hidden;
+    font-family: serif;
 }
 
 .typewriter::after {
