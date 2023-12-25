@@ -80,6 +80,7 @@
     color: #99BADD;
     font-size: 115px;
     margin-bottom: 10px;
+    text-shadow: -1px 0 #cdcdcd, 0 1px #cdcdcd, 1px 0 #cdcdcd, 0 -1px #cdcdcd;
 }
 
 .headerContainer p {
@@ -112,9 +113,10 @@
 .aboutMeBottom {
     padding-top: 100px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 80px;
+    gap: 5vw;
+    padding-left: 10px;
 }
 
 .photoStripContainer {
@@ -127,7 +129,7 @@
 .stripPicContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center images horizontally */
+    align-items: center;
 }
 
 .stripPic {
@@ -146,6 +148,45 @@
 
 .stripPic.vertical img {
     object-position: center top;
+}
+
+.abMeSectionTitle {
+    font-size: max(18px, 2.1vw);
+    padding-right: 30px;
+    color:#99BADD;
+    text-shadow: -.2px 0 #cdcdcd, 0 .2px #cdcdcd, .2px 0 #cdcdcd, 0 -.2px #cdcdcd;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.abMeParagraph {
+    font-size: max(15px, 2vw);
+    padding-top: 20px;
+    padding-right: 30px;
+    color: #333333;
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+
+.boldenSection {
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #333333;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+.signature {
+    font-size: max(15px, 2vw);
+    font-style: italic;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #99BADD;
+    text-shadow: -.2px 0 #cdcdcd, 0 .2px #cdcdcd, .2px 0 #cdcdcd, 0 -.2px #cdcdcd;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 
