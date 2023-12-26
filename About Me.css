@@ -201,7 +201,34 @@
     }
 
     .headerContainer p {
-        font-size: 40px;
-        margin-top: 10px;
+        font-size: 30px;
     }
+
+    .aboutMeBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .photoStripContainer {
+        margin-top: 10px;
+        order: 2; 
+    }
+
+    .stripPicContainer {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+
+    .stripPic {
+        display: none;
+        height: 300px;
+        width: 300px;
+    }
+
+    .stripPic:first-child {
+        display: block;
+    }
+
 }
