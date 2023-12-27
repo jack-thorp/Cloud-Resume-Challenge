@@ -1,5 +1,5 @@
 .resumeBody {
-    background-color: white;
+    background-color: #FAF9F6;
 }
 
 .header{
@@ -84,7 +84,7 @@
 }
 
 .resumeIntro {
-    background-color: white;
+    background-color: #FAF9F6;
     display: flex;
     align-items: center;
     justify-content: center;

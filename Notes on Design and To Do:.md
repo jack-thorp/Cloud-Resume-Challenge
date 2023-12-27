@@ -1,8 +1,15 @@
 Notes on Design and To Do:
+
+Not done till: 
+    Give me an impression of yourself as a person so I'd want to even talk to you for 5 minutes.
+    
+    I feel excited to share this with ppl.
+                               
 ============================
 Inspo:
 True Fave:
     - http://www.mintboxx.com/work.html
+    - https://robbowen.digital/
 
 Landing Page:
     https://kristinaplummer.com/
