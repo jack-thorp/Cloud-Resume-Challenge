@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+//initalize variables and listeners on screen load
     const homeButton = document.querySelector('.navigationButtons button:nth-child(1)');
     const aboutButton = document.querySelector('.navigationButtons button:nth-child(2)');
     const resumeButton = document.querySelector('.navigationButtons button:nth-child(3)');
@@ -8,7 +9,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let isMobileScreen = window.innerWidth <= 600;
     let wasMobileScreen = isMobileScreen;
     let carouselInterval;
+    //on screen load, check the size of screen to adjust about me text and image container
+    updateButtonText();
+    handleImageCarousel();
 
+//adding button links
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'Landing Page.html';
+    });
+
+    aboutButton.addEventListener('click', () => {
+        window.location.href = 'About Me.html';
+    });
+
+    resumeButton.addEventListener('click', () => {
+        window.location.href = 'Resume Page.html';
+    });
+
+//create function
+    //function updates the text to be 'about' or 'about me'
     function updateButtonText() {
         if (window.innerWidth <= 600) {
             aboutButton.textContent = 'About';
@@ -19,6 +38,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
+    //fucntion to keep photo strip or display one image that rotates
     function handleImageCarousel(shouldStart = true) {
         clearInterval(carouselInterval);
         if (!isMobileScreen) {
@@ -41,9 +61,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    updateButtonText();
-    handleImageCarousel();
-
+//add event listeners
+    //adds enlarge/minimzie effect to main pic when scrolling up/down
     window.addEventListener('resize', () => {
         const currentWidth = window.innerWidth;
         wasMobileScreen = isMobileScreen;
@@ -51,25 +70,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         updateButtonText();
 
+        //update photostrip piece when changing screen size
         if (!wasMobileScreen && isMobileScreen) {
             handleImageCarousel();
         } else if (wasMobileScreen && !isMobileScreen) {
             handleImageCarousel(false);
         }
     });
-
-    homeButton.addEventListener('click', () => {
-        window.location.href = 'Landing Page.html';
-    });
-
-    aboutButton.addEventListener('click', () => {
-        window.location.href = 'About Me.html';
-    });
-
-    resumeButton.addEventListener('click', () => {
-        window.location.href = 'Resume Page.html';
-    });
-
+    
+     //adds enlarge/minimzie effect to main pic when scrolling up/down
     window.addEventListener('scroll', function () {
         const distanceFromTop = aboutMeMainPic.getBoundingClientRect().top;
 
