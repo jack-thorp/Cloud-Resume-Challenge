@@ -14,32 +14,30 @@ window.addEventListener('DOMContentLoaded', (event) => {
             aboutButton.textContent = 'About';
         } else {
             aboutButton.textContent = 'About Me';
-            // If transitioning from mobile to desktop, reset the picture container
             aboutMeMainPic.classList.remove('enlarged');
-            handleImageCarousel(false); // Stop the carousel on desktop
+            handleImageCarousel(false);
         }
     }
 
     function handleImageCarousel(shouldStart = true) {
-        // Clear the existing interval to avoid multiple instances
         clearInterval(carouselInterval);
-
-        // Ensure all three images are displayed when going from mobile to desktop
         if (!isMobileScreen) {
             stripPics.forEach(pic => {
                 pic.style.display = 'block';
             });
         }
-
-        // Only enable picture carousel on mobile view
         if (isMobileScreen && shouldStart) {
             let currentIndex = 0;
+
+            stripPics.slice(1).forEach(pic => {
+                pic.style.display = 'none';
+            });
 
             carouselInterval = setInterval(() => {
                 stripPics[currentIndex].style.display = 'none';
                 currentIndex = (currentIndex + 1) % stripPics.length;
                 stripPics[currentIndex].style.display = 'block';
-            }, 3000); // Adjust the interval (in milliseconds) as needed
+            }, 3000);
         }
     }
 
@@ -54,11 +52,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         updateButtonText();
 
         if (!wasMobileScreen && isMobileScreen) {
-            // If transitioning from desktop to mobile, start the carousel
             handleImageCarousel();
         } else if (wasMobileScreen && !isMobileScreen) {
-            // If transitioning from mobile to desktop, reset the picture container and stop the carousel
-            aboutMeMainPic.classList.remove('enlarged');
             handleImageCarousel(false);
         }
     });
