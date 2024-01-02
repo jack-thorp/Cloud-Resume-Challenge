@@ -19,12 +19,6 @@ Resume:
     https://www.garysheng.com/
 
 
-Landing Page:
-    - lets call it a day on this one
-
-About Me:
-    - On mobile, get rid of pic strip and add box where you cn flip through the images
-
 
 
 Resume:
