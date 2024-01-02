@@ -84,7 +84,7 @@
 }
 
 .resumeIntro {
-    background-color: #FAF9F6;
+    background: linear-gradient(to bottom, transparent, rgb(234, 233, 233), transparent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,16 +93,29 @@
 .resumePic {
     max-width: 100%;
     height: auto;
-    border-radius: 144px;
     box-shadow: 10px 15px 25px 0 gray;
 }
 
+.resumePicContainer.slideInLeft .resumePic{
+    animation: slideIn 1.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .resumeSummary {
-    padding-left: 13vw;
     background-color: #f5f5f5;
     padding: 20px;
     width: min(900px,100vw);
-    margin-left: 20px;
+    margin-left: 8vw;
     box-shadow: 5px 5px 10px gray;
 }
 
@@ -222,7 +235,13 @@ ul {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .resumeSummary {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {    
     .resumeIntro {
         flex-direction: column;
         align-items: center;
@@ -232,6 +251,7 @@ ul {
         margin-left: 0;
         margin-top: 10px;
         width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     .myActiveToolbelt {
@@ -255,10 +275,6 @@ ul {
     .downloadResume {
         color: white;
         background-color: #7BC17E;
-    }
-
-    .resumeSummary {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     .experienceText {

@@ -1,4 +1,5 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function () {
+    // Navigation buttons
     const homeButton = document.querySelector('.navigationButtons button:nth-child(1)');
     const aboutButton = document.querySelector('.navigationButtons button:nth-child(2)');
     const resumeButton = document.querySelector('.navigationButtons button:nth-child(3)');
@@ -10,21 +11,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
             aboutButton.textContent = 'About Me';
         }
     }
+
     updateButtonText();
     window.addEventListener('resize', updateButtonText);
 
-    
-    homeButton.addEventListener('click', () => {
+    // Add event listeners for navigation buttons
+    homeButton.addEventListener('click', function () {
         window.location.href = 'Landing Page.html';
     });
 
-    // Handle About button click
-    aboutButton.addEventListener('click', () => {
+    aboutButton.addEventListener('click', function () {
         window.location.href = 'About Me.html';
     });
 
-    // Handle Resume button click
-    resumeButton.addEventListener('click', () => {
+    resumeButton.addEventListener('click', function () {
         window.location.href = 'Resume Page.html';
     });
+
+    // Add slideInLeft class to resumePicContainer
+    const resumePicContainer = document.querySelector(".resumePicContainer");
+    resumePicContainer.classList.add("slideInLeft");
 });
