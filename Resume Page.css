@@ -118,15 +118,25 @@
     box-shadow: 5px 5px 10px gray;
 }
 
+.professionalAboutMe {
+    font-size: max(20px, 1.2vw);
+    font-family: sans-serif;
+    color: #2f2f2f;
+}
+
 .activeToolbeltTitle {
     color: #7BC17E;
     font-size: max(20px,1.5vw);
+    font-family: sans-serif;
 }
 
 ul {
     list-style: inside circle;
     columns: 2;
     padding: 0px;
+    font-size: max(16px,1.1vw);
+    font-family: sans-serif;
+    color: #626262;
 }
 
 .experienceContent {
