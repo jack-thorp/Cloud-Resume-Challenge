@@ -63,7 +63,7 @@ body {
     cursor: pointer;
     transition: color 0.3s ease-in-out;
     margin: 0 5px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .navigationButtons button:hover {
@@ -151,7 +151,7 @@ ul {
 
 .experienceContent h3 {
     color: #7BC17E;
-    font-size: max(22px,1.8vw);
+    font-size: max(25px,2vw);
     margin: 0 0 10px;
     font-family: sans-serif;
 }
@@ -162,6 +162,7 @@ ul {
     font-family: sans-serif;
     color: #626262;
     font-size: max(20px,1.3vw);
+    padding-bottom: 10px;
 }
 
 .jobSummary img {
@@ -176,6 +177,7 @@ ul {
     font-family: sans-serif;
     color: #3b3a3a;
     margin-top: 20px;
+    font-size: max(20px,1.3vw);
 }
 
 .jobDetails {
@@ -186,9 +188,10 @@ ul {
     font-size: max(18px,1.1vw);
     font-family: sans-serif;
     margin: 0 0 10px;
-    color: #7BC17E;
+    color: #99BADD;
     font-style: italic;
     margin-top: 10px;
+    text-shadow: -.1px 0 #cdcdcd, 0 .1px #cdcdcd, .1px 0 #cdcdcd, 0 -.1px #cdcdcd;
 }
 
 .jobDetails p {
@@ -196,7 +199,7 @@ ul {
 }
 
 .jobDate {
-    color: #626262;
+    color: #7BC17E;
     margin-left: 8px;
 }
 
@@ -215,6 +218,7 @@ ul {
     font-family: sans-serif;
     color: #626262;
     list-style: inside circle;
+    list-style-position: outside;
 }
 
 #clemsonDetail2 {
