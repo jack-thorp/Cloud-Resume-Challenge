@@ -39,7 +39,7 @@ body {
 /*Actual Landing Page*/
 
 .landingPageBody {
-    background-image: linear-gradient(to right, #FAF9F6 30%, transparent 60%), url('images/csgMain.png');
+    background-image: linear-gradient(to right, #FAF9F6 30%, transparent 60%), url('../images/csgMain.png');
     background-size: cover;
     background-position: center right;
     background-attachment: fixed;
