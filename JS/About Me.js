@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 //adding button links
     homeButton.addEventListener('click', () => {
-        window.location.href = 'Landing Page.html';
+        window.location.href = 'LandingPage.html';
     });
 
     aboutButton.addEventListener('click', () => {

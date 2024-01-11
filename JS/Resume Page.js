@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add event listeners for navigation buttons
     homeButton.addEventListener('click', function () {
-        window.location.href = 'Landing Page.html';
+        window.location.href = 'LandingPage.html';
     });
 
     aboutButton.addEventListener('click', function () {
