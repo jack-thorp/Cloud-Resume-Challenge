@@ -263,6 +263,12 @@ body {
     transition: width 300ms ease-in-out;
 }
 
+.button:hover::after {
+    width: 110%;
+    -webkit-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+
 .aboutMeButton:after{
     background: #99BADD;
 }
