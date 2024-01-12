@@ -269,20 +269,21 @@ body {
     transition: width 300ms ease-in-out;
 }
 
-.aboutMeButton:after{
-    background: #99BADD;
+.aboutMeButton:hover::after{
+    background-color: #99BADD;
+    width: 110%;
+    position: absolute;
 }
 
-.resumeButton:after{
-    background: #7BC17E;
+.resumeButton:hover::after{
+    background-color: #7BC17E;
+    width: 110%;
+    position: absolute;
 }
 
 .button:hover {
     color: white;
     transform: scale(1.1);
-    &:after {
-        width: 110%;
-    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
