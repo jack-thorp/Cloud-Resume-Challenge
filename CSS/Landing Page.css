@@ -334,7 +334,7 @@ body {
     .shapeSection {
         height: max(275px, 27vw);
         width: max(275px, 27vw);
-        background-image: url('images/csgOG.png');
+        background-image: url('../images/csgOG.png');
         border: 1.3px solid black;
         box-shadow: 0 0 8px grey;
     }
