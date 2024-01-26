@@ -93,11 +93,13 @@ body {
 
 .titleName{
     color: #626262;
+    z-index: 2;
 }
 
 .titleDesc {
     color: #aaa;
     margin-left: 3px;
+    z-index: 2;
 }
 
 .landingPage {
@@ -121,6 +123,7 @@ body {
     transform: rotate(45deg) scale(1);
     border: 15px solid #acc8d7;
     display: flex;
+    top: 20%;
     align-items: center;
     justify-content: center;
     margin-top: -20px;
@@ -290,12 +293,16 @@ body {
     .buttonWrapper {
         margin-top: 85%;
     }
+    .button {
+        margin: 0px;
+    }
 }
 
 @media only screen and (max-height: 725px) {
     .shapeSection {
         height: max(125px, 15vw);
         width: max(125px, 15vw);
+        border: 10px solid #acc8d7;
     }
 
     #nameHeader {
@@ -304,6 +311,28 @@ body {
 
     .buttonWrapper {
         padding-top: 10%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .shapeSection {
+        height: max(100px, 12vw);
+        width: max(100px, 12vw);
+        border: 8px solid #acc8d7;
+    }
+
+    #nameHeader {
+        font-size: max(.8rem, 1vw);
+    }
+
+    .button {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    .titleDesc {
+        display: none;
     }
 }
 
