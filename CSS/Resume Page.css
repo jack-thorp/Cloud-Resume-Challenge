@@ -283,6 +283,10 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {    
+    .titleName {
+        display: none;
+    }
+    
     .resumeIntro {
         flex-direction: column;
         align-items: center;

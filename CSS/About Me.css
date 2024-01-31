@@ -200,6 +200,10 @@ body {
         padding-left: 20px;
     }
 
+    .titleName{ 
+        display: none;
+    }
+
     .headerContainer h2 {
         padding-top: 40px;
         font-size: 90px;
