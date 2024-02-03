@@ -270,14 +270,11 @@ ul {
 
 .button:hover {
     color: white;
+    background-color: #7BC17E;
     transform: scale(1.1);
     &:after {
         width: 110%;
     }
-}
-
-.downloadResume:hover::after{
-    background-color: #7BC17E;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
