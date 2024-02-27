@@ -37,3 +37,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
         window.location.href = 'About Me.html';
     });
 });
+
+/*Visitor Counter*/
+async function updateCounter() {
+    let response = await fetch("https://xew2z5uph3byqfccrsitxi4gzu0ljhjh.lambda-url.us-east-1.on.aws/");
+    let data = await response.json();
+    console.log("Congrats! You are the"+data+"visitor of Jack's site!")
+}
+updateCounter();
