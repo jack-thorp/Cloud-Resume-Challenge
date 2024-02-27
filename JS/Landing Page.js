@@ -40,8 +40,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 /*Visitor Counter*/
 async function updateCounter() {
-    let response = await fetch("https://xew2z5uph3byqfccrsitxi4gzu0ljhjh.lambda-url.us-east-1.on.aws/");
-    let data = await response.json();
-    console.log("Congrats! You are the"+data+"visitor of Jack's site!")
+    if (!sessionStorage.getItem('hasViewedSite')) {
+        let response = await fetch("https://xew2z5uph3byqfccrsitxi4gzu0ljhjh.lambda-url.us-east-1.on.aws/");
+        sessionStorage.setItem('hasViewedSite','true')
+    }
 }
 updateCounter();
