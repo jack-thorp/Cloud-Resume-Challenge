@@ -226,10 +226,11 @@ body {
 
 .buttonWrapper {
     display: flex;
+    position: fixed;
     flex-direction: column;
     align-items: center;
-    padding-top: 45%;
-    margin-top: 60%;
+    top: 70%;
+    right: 65.9%;
     z-index: 2;
     pointer-events: auto;
 }
@@ -291,11 +292,13 @@ body {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .buttonWrapper {
-        margin-top: 85%;
-    }
     .button {
         margin: 0px;
+    }
+
+    .buttonWrapper {
+        top: 60%;
+        right: 65.9%;
     }
 }
 
@@ -376,10 +379,7 @@ body {
     }
 
     .buttonWrapper {
-        padding-top: 235%;
-    }
-
-    .button {
-        margin: 20px 0;
+        left: 50%;
+        top: 60%;
     }
 }
