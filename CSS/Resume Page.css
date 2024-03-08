@@ -245,9 +245,9 @@ ul {
     line-height: 50px;
     font-weight: bold;
     text-decoration: none;
-    background: transparent;
+    background: #7BC17E;
     text-align: center;
-    color: #626262;
+    color: white;
     letter-spacing: 1px;
     overflow: hidden;
     z-index: 1;
