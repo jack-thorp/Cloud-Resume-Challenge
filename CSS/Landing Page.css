@@ -166,48 +166,30 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid transparent;
-    animation: typing 1s steps(30, end) forwards, blink-caret 0.5s step-end 2.5s infinite;
+    animation: typing 1s steps(30, end) forwards;
 }
 
 @keyframes typing {
+    /* Note: Leaving in border-right commented if ever desire blinking typing affect */
     from {
         width: 0;
-        border-right: 0.15em solid white;
+        /*border-right: 0.15em solid transparent;*/
     }
     to {
-        border-right: 0.15em solid white;
+        /*border-right: 0.15em solid transparent;*/
     }
     25% {
-        border-right: 0.15em transparent;
+        /*border-right: 0.15em transparent;*/
     }
     50% {
-        border-right: 0.15em solid white;
+        /*border-right: 0.15em solid transparent;*/
     }
     75% {
-        border-right: 0.15em solid transparent;
+        /*border-right: 0.15em solid transparent;*/
     }
     100% {
         width: 100%;
-        border-right: 0.15em solid white;
-    }
-}
-
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: white;
-    }
-    25% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: white;
-    }
-    75% {
-        border-color: transparent;
-    }
-    100% {
-        border-color: white;
+        /*border-right: 0.15em solid transparent;*/
     }
 }
 
@@ -356,10 +338,6 @@ body {
         opacity: 1; 
     }
 
-    .landingPageBody{
-        background-image: none;
-    }
-
     .landingPage {
         padding-right: 0%;
     }
@@ -367,14 +345,7 @@ body {
     .shapeSection {
         height: max(275px, 27vw);
         width: max(275px, 27vw);
-        background-image: url('../images/csgOG.png');
-        border: 1.3px solid black;
-        box-shadow: 0 0 8px grey;
     }
-
-    #nameHeader {
-        font-family: serif;
-        color: white;    }
 
     .buttonWrapper {
         left: 50%;
