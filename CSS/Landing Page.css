@@ -40,7 +40,7 @@ body {
 /*Actual Landing Page*/
 
 .landingPageBody {
-    background-image: linear-gradient(to right, #FAF9F6 30%, transparent 60%), url('../images/csgMain.png');
+    background-image: linear-gradient(to right, #FAF9F6 15%, transparent 70%), url('../images/csgMain.png');
     background-size: cover;
     background-position: center right;
     background-attachment: fixed;
@@ -80,29 +80,6 @@ body {
     opacity: .5; 
 }
 
-.title {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    font-family: sans-serif;
-    overflow:hidden;
-    font-size: max(8px, 0.5vw);
-    font-style: italic;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.titleName{
-    color: #626262;
-    z-index: 2;
-}
-
-.titleDesc {
-    color: #aaa;
-    margin-left: 3px;
-    z-index: 2;
-}
-
 .landingPage {
     display: flex;
     flex-direction: column;
@@ -137,7 +114,7 @@ body {
     transform: rotate(45deg) scale(1);
     border: 15px solid #acc8d7;
     display: flex;
-    top: 15%; /*was 20%*/
+    top: 10%;
     align-items: center;
     justify-content: center;
     background-size: cover;
