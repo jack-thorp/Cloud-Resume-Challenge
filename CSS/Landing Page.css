@@ -287,26 +287,32 @@ body {
     
 }
 
+@media only screen and (max-width: 725px) {
+    .button {
+        margin: 5px;
+    }
+}
+
 @media only screen and (max-height: 900px) {
     .shapeSection {
-        height: max(150px, 17vw);
-        width: max(150px, 17vw);
+        height: max(160px, 17vw);
+        width: max(160px, 17vw);
         border: 10px solid #acc8d7;
     }
 }
 
 @media only screen and (max-height: 725px) {
     .shapeSection {
-        height: max(125px, 15vw);
-        width: max(125px, 15vw);
+        height: max(135px, 15vw);
+        width: max(135px, 15vw);
         border: 10px solid #acc8d7;
     }
 }
 
 @media only screen and (max-height: 400px) {
     .shapeSection {
-        height: max(100px, 12vw);
-        width: max(100px, 12vw);
+        height: max(110px, 12vw);
+        width: max(110px, 12vw);
         border: 8px solid #acc8d7;
     }
 
