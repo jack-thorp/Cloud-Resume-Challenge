@@ -9,8 +9,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    font-style: italic;
     position: fixed;
     background-color: #161616;
     transition: 1s;
@@ -135,7 +133,7 @@ body {
     text-align: center;
     font-size: 3vh;
     color: rgb(41, 41, 41);
-    font-family: sans-serif;
+    font-family: "Figtree", sans-serif;
     vertical-align: middle;
 }
 
@@ -203,7 +201,7 @@ body {
 .button {
     margin: 15px;
     padding: 10px 10vw;
-    font-family: sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 2.3vh;
     max-width: 250px;
     height: 50px;
