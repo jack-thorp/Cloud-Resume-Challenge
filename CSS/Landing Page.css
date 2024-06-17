@@ -200,7 +200,7 @@ body {
 
 .button {
     margin: 15px;
-    padding: 10px 10vw;
+    padding: 0px 10vw;
     font-family: "Figtree", sans-serif;
     font-size: 2.3vh;
     max-width: 250px;
@@ -244,6 +244,12 @@ body {
 
 .resumeButton:hover::after{
     background-color: #7BC17E;
+    width: 110%;
+    position: absolute;
+}
+
+.projectButton:hover::after{
+    background-color: #F49E78;
     width: 110%;
     position: absolute;
 }

@@ -36,6 +36,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
     aboutMeButton.addEventListener('click', () => {
         window.location.href = 'About Me.html';
     });
+
+    const projectButton = document.querySelector('.projectButton');
+    projectButton.addEventListener('click', () => {
+        window.location.href = 'Project Page.html';
+    });
 });
 
 /*Visitor Counter*/
