@@ -33,7 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'Project Page.html';
     });
 
-    // Add slideInLeft class to resumePicContainer
-    const resumePicContainer = document.querySelector(".resumePicContainer");
-    resumePicContainer.classList.add("slideInLeft");
 });

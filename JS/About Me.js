@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const homeButton = document.querySelector('.navigationButtons button:nth-child(1)');
     const aboutButton = document.querySelector('.navigationButtons button:nth-child(2)');
     const resumeButton = document.querySelector('.navigationButtons button:nth-child(3)');
+    const projectsButton = document.querySelector('.navigationButtons button:nth-child(4)');
+
     const aboutMeMainPic = document.getElementById('aboutMeMainPic');
     const stripPics = Array.from(document.getElementsByClassName('stripPic'));
     let isScrolled = false;
@@ -24,6 +26,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     resumeButton.addEventListener('click', () => {
         window.location.href = 'Resume Page.html';
+    });
+
+    projectsButton.addEventListener('click', () => {
+        window.location.href = 'Project Page.html';
     });
 
 //create function
