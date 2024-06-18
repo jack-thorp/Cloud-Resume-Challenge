@@ -67,7 +67,7 @@ body {
     cursor: pointer;
     transition: color 0.3s ease-in-out;
     margin: 0 5px;
-    font-size: 17px;
+    font-size: max(17px, 1.1vw);
 }
 
 .navigationButtons button:hover {
@@ -148,4 +148,10 @@ body {
     color: #666;
     text-align: center;
     font-family: "Figtree", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {    
+    .titleName {
+        display: none;
+    }
 }
