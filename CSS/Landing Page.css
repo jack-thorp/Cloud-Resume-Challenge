@@ -299,8 +299,8 @@ body {
 
 @media only screen and (max-height: 900px) {
     .shapeSection {
-        height: max(160px, 17vw);
-        width: max(160px, 17vw);
+        height: max(180px, 17vw);
+        width: max(180px, 17vw);
         border: 10px solid #acc8d7;
     }
 }
