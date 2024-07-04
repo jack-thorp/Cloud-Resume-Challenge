@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Mobile Menu
     const mobileMenu = document.querySelector('.mobileMenu');
+    const homeButtonMobile = document.querySelector('.homeButton');
+    const aboutButtonMobile = document.querySelector('.aboutMeButton');
+    const resumeButtonMobile = document.querySelector('.resumeButton');
+    const projectsButtonMobile = document.querySelector('.projectButton');
 
     function updateButtonText() {
         if (window.innerWidth <= 600) {
@@ -53,6 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.remove('no-scroll');
         }
     });
+
+    homeButtonMobile.addEventListener('click', function () {
+        window.location.href = 'LandingPage.html';
+    });
+
+    aboutButtonMobile.addEventListener('click', function () {
+        window.location.href = 'About Me.html';
+    });
+
+    resumeButtonMobile.addEventListener('click', function () {
+        window.location.href = 'Resume Page.html';
+    });
+
+    projectsButtonMobile.addEventListener('click', function () {
+        window.location.href = 'Project Page.html';
+    });
+
 
     // Add slideInLeft class to resumePicContainer
     const resumePicContainer = document.querySelector(".resumePicContainer");
