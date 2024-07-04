@@ -12,17 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const resumeButtonMobile = document.querySelector('.resumeButton');
     const projectsButtonMobile = document.querySelector('.projectButton');
 
-    function updateButtonText() {
-        if (window.innerWidth <= 600) {
-            aboutButton.textContent = 'About';
-        } else {
-            aboutButton.textContent = 'About Me';
-        }
-    }
-
-    updateButtonText();
-    window.addEventListener('resize', updateButtonText);
-
     // Add event listeners for navigation buttons
     homeButton.addEventListener('click', function () {
         window.location.href = 'LandingPage.html';
