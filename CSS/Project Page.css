@@ -206,7 +206,7 @@ body {
     position: relative;
     width: calc(100% - 40px);
     max-width: 600px;
-    height: 30vh;
+    height: 35vh;
     max-height: 300px;
     background-color: #FAF9F6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -295,5 +295,9 @@ body {
     .mobileMenu:hover {
         opacity: 1; 
         cursor: pointer;
+    }
+
+    .boxImage {
+        opacity: 10%;
     }
 }
