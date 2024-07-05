@@ -13,13 +13,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const resumeButtonMobile = document.querySelector('.resumeButton');
     const projectsButtonMobile = document.querySelector('.projectButton');
 
-    const aboutMeMainPic = document.getElementById('aboutMeMainPic');
-    const stripPics = Array.from(document.getElementsByClassName('stripPic'));
+    const aboutMeMainPic = document.getElementById('projectPicContainer');
     let isScrolled = false;
-    let isMobileScreen = window.innerWidth <= 600;
-    let wasMobileScreen = isMobileScreen;
-    let carouselInterval;
-    handleImageCarousel();
 
 //adding button links
     homeButton.addEventListener('click', () => {
@@ -72,61 +67,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.location.href = 'Project Page.html';
     });
 
-
-//create function
-
-    //fucntion to keep photo strip or display one image that rotates
-    function handleImageCarousel(shouldStart = true) {
-        clearInterval(carouselInterval);
-        if (!isMobileScreen) {
-            stripPics.forEach(pic => {
-                pic.style.display = 'block';
-            });
-        }
-        if (isMobileScreen && shouldStart) {
-            let currentIndex = 0;
-
-            stripPics.slice(1).forEach(pic => {
-                pic.style.display = 'none';
-            });
-
-            carouselInterval = setInterval(() => {
-                stripPics[currentIndex].style.display = 'none';
-                currentIndex = (currentIndex + 1) % stripPics.length;
-                stripPics[currentIndex].style.display = 'block';
-            }, 3000);
-        }
-    }
-
-//add event listeners
-    window.addEventListener('resize', () => {
-        const currentWidth = window.innerWidth;
-        wasMobileScreen = isMobileScreen;
-        isMobileScreen = currentWidth <= 600;
-
-        //update photostrip piece when changing screen size
-        if (!wasMobileScreen && isMobileScreen) {
-            handleImageCarousel();
-        } else if (wasMobileScreen && !isMobileScreen) {
-            handleImageCarousel(false);
-        }
-    });
-    
-     //adds enlarge/minimzie effect to main pic when scrolling up/down
     window.addEventListener('scroll', function () {
-        const distanceFromTop = aboutMeMainPic.getBoundingClientRect().top;
+        const distanceFromTop = projectPicContainer.getBoundingClientRect().top;
 
         if (distanceFromTop < window.innerHeight * 0.5 && !isScrolled) {
-            aboutMeMainPic.classList.add('enlarged');
+            projectPicContainer.classList.add('enlarged');
             isScrolled = true;
         } else if (distanceFromTop >= window.innerHeight * 0.5 && isScrolled) {
-            aboutMeMainPic.classList.remove('enlarged');
+            projectPicContainer.classList.remove('enlarged');
             isScrolled = false;
         }
 
         if (window.scrollY === 0) {
-            aboutMeMainPic.classList.remove('enlarged');
+            projectPicContainer.classList.remove('enlarged');
             isScrolled = false;
         }
     });
+
 });

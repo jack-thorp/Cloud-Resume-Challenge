@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const resumeButtonMobile = document.querySelector('.resumeButton');
     const projectsButtonMobile = document.querySelector('.projectButton');
 
+    //Projects
+    const cloudResumeChallenge = document.querySelector('.CloudResumeChallenge');
+
 
     // Add event listeners for navigation buttons
     homeButton.addEventListener('click', function () {
@@ -64,4 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'Project Page.html';
     });
 
+    //Add Event Listener to Project Pages
+    cloudResumeChallenge.addEventListener('click', function () {
+        window.location.href = 'project-cloudResumeChallenge.html';
+    });
 });
