@@ -194,7 +194,7 @@ body {
 /* Individual Project Page */
 .pageTitle {
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     font-size: max(23px, 1.8vw);
     color: #F49E78;
     padding-top: 20px;
@@ -205,18 +205,70 @@ body {
 .projectPicContainer {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .projectPic {
     width:80%;
-    max-width: 1200px;
+    max-width: 1450px;
     height: auto;
+    max-height: 55vh;
     border-radius:10px;
     transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .projectPicContainer.enlarged .projectPic {
     transform: scale(1.1);
+}
+
+/* Project Content */
+.projectInfoContainer {
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3vw;
+    padding-left: 10%;
+    padding-right:10%
+}
+
+.projectParagraph {
+    font-size: max(12px, 1.5vw);
+    color: #333333;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Figtree",sans-serif;
+}
+
+.boldenSection {
+    font-weight: bold;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    color: #333333;
+    padding-left: 10px;
+    font-family: "Figtree",sans-serif;
+}
+
+.hyperlink {
+    color: #F49E78;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.projectBullets li{
+    padding-bottom: 1.5%;
+    font-family: "Figtree",sans-serif;
+    list-style:square;
+    list-style-position: outside;
+    font-size: max(12px, 1.5vw);
+}
+
+.footer{
+    padding-bottom:10%;
 }
 
 @media only screen and (max-width: 600px) {    
@@ -251,5 +303,17 @@ body {
 
     .boxImage {
         opacity: 10%;
+    }
+
+    .projectInfoContainer {
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .projectParagraph {
+        font-size: 16px;
+    }
+    .projectBullets li{
+        font-size: 16px;
     }
 }

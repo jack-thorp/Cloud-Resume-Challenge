@@ -215,7 +215,7 @@ body {
     margin-left: 20px;
     position: relative;
     overflow: hidden;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 .aboutMeMainPic {
@@ -281,7 +281,7 @@ body {
     color:#99BADD;
     text-shadow: -.2px 0 #cdcdcd, 0 .2px #cdcdcd, .2px 0 #cdcdcd, 0 -.2px #cdcdcd;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 .abMeParagraph {
@@ -290,7 +290,7 @@ body {
     padding-right: 30px;
     color: #333333;
     padding-left: 5px;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 .boldenSection {
@@ -299,7 +299,7 @@ body {
     padding-bottom: 30px;
     color: #333333;
     padding-left: 10px;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 .signature {
@@ -311,7 +311,7 @@ body {
     color: #99BADD;
     text-shadow: -.2px 0 #cdcdcd, 0 .2px #cdcdcd, .2px 0 #cdcdcd, 0 -.2px #cdcdcd;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 

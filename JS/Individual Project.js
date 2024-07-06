@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const resumeButtonMobile = document.querySelector('.resumeButton');
     const projectsButtonMobile = document.querySelector('.projectButton');
 
-    const aboutMeMainPic = document.getElementById('projectPicContainer');
+    const projectPicContainer = document.getElementById('projectPicContainer');
     let isScrolled = false;
 
 //adding button links

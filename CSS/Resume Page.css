@@ -192,7 +192,7 @@ body {
 
 .pageTitle {
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     font-size: max(23px, 1.8vw);
     color: #7BC17E;
     padding-top: 20px;
@@ -245,14 +245,14 @@ body {
 
 .professionalAboutMe {
     font-size: max(20px, 1.2vw);
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     color: #2f2f2f;
 }
 
 .activeToolbeltTitle {
     color: #7BC17E;
     font-size: max(20px,1.5vw);
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 ul {
@@ -260,7 +260,7 @@ ul {
     columns: 2;
     padding: 0px;
     font-size: max(16px,1.1vw);
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     color: #626262;
 }
 
@@ -273,13 +273,13 @@ ul {
     color: #7BC17E;
     font-size: max(25px,2vw);
     margin: 0 0 10px;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
 }
 
 .jobSummary {
     display: flex;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     color: #626262;
     font-size: max(20px,1.3vw);
     padding-bottom: 10px;
@@ -294,7 +294,7 @@ ul {
 
 .jobSummary h4 {
     margin: 0 0 10px;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     color: #3b3a3a;
     margin-top: 20px;
     font-size: max(20px,1.3vw);
@@ -306,7 +306,7 @@ ul {
 
 .jobDetails h5 {
     font-size: max(18px,1.1vw);
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     margin: 0 0 10px;
     color: #99BADD;
     font-style: italic;
@@ -335,7 +335,7 @@ ul {
     padding-bottom: 20px;
     margin-right: 100px;
     padding-top: 10px;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     color: #626262;
     list-style: inside circle;
     list-style-position: outside;
@@ -354,7 +354,7 @@ ul {
 .button {
     margin: 40px;
     padding: 20px 10vw;
-    font-family: sans-serif;
+    font-family: "Figtree",sans-serif;
     font-size: max(15px, 1.2vw);
     max-width: 250px;
     height: 50px;
