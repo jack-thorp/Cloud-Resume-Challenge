@@ -278,8 +278,8 @@ body {
     }
 
     .shapeSection {
-        height: max(200px, 12vw);
-        width: max(200px, 12vw);
+        height: max(220px, 12vw);
+        width: max(220px, 12vw);
     }
 
     .button {
