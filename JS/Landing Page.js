@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 /*Visitor Counter*/
 async function updateCounter() {
     if (!sessionStorage.getItem('hasViewedSite')) {
-        let response = await fetch("https://xew2z5uph3byqfccrsitxi4gzu0ljhjh.lambda-url.us-east-1.on.aws/");
+        let response = await fetch("https://n61igzlb3g.execute-api.us-east-1.amazonaws.com/jack-thorp_site/siteview?event=SETCOUNT");
         sessionStorage.setItem('hasViewedSite','true')
     }
 }
