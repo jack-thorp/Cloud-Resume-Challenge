@@ -299,16 +299,16 @@ body {
 
 @media only screen and (max-height: 900px) {
     .shapeSection {
-        height: max(180px, 17vw);
-        width: max(180px, 17vw);
+        height: max(205px, 17vw);
+        width: max(205px, 17vw);
         border: 10px solid #acc8d7;
     }
 }
 
 @media only screen and (max-height: 725px) {
     .shapeSection {
-        height: max(135px, 15vw);
-        width: max(135px, 15vw);
+        height: max(175px, 15vw);
+        width: max(175px, 15vw);
         border: 10px solid #acc8d7;
     }
 }
