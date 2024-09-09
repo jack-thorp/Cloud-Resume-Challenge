@@ -11,4 +11,4 @@ The challenge was all about getting my hands dirty with different parts of softw
 - **API Development**: Creating an API using *Lambda*, *API Gateway*, and *DynamoDB* to track visitors, including enabling *CORS*
 - **Source Control** Learning about Git and setting up a *GitHub* repo
 
-Overall, I am happy with how this project turned out. It has been an incredible learning experience, plus holds potential for future improvements and updates!
+Overall, I am happy with how this project turned out. It has been an incredible learning experience, plus holds potential for future improvements and updates! 
