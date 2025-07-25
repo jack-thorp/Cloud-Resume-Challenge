@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Projects
     const cloudResumeChallenge = document.querySelector('.CloudResumeChallenge');
-
+    const wahooTimer = document.querySelector('.WahooTimer');
 
     // Add event listeners for navigation buttons
     homeButton.addEventListener('click', function () {
@@ -70,5 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //Add Event Listener to Project Pages
     cloudResumeChallenge.addEventListener('click', function () {
         window.location.href = 'project-cloudResumeChallenge.html';
+    });
+
+    wahooTimer.addEventListener('click', function () {
+        window.location.href = 'project-wahooTimer.html';
     });
 });

@@ -8,14 +8,15 @@
         <meta property = "og:description" content = "Hey! Thank's for visiting my site. This website was inspried from the Cloud Resume Challenge project - https://cloudresumechallenge.dev/.">
         <meta property = "og:site_name" content = "Jack Thorp">
         <!--Key Site Properties-->
-        <title>Jack Thorp - Projects</title>
+        <title>Jack Thorp - Wahoo Timer</title>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <!--  For Browser Icon  -->
         <!-- "https://www.flaticon.com/free-icons/palm-tree" - palm tree icons created by Muhammad Atif - Flaticon-->
         <link rel = "icon" type="image/png" href="images/palm-tree (1).png" alt="Palm Tree Icon">
         <!--CSS-->
-        <link rel = "stylesheet" type = "text/css" href = "CSS/Project Page.css">
+        <link rel = "stylesheet" type = "text/css" href = "CSS/Individual Project.css">
+        <link rel = "stylesheet" type = "text/css" href = "CSS/project-wahooTimer.css">
         <!--For All Icon Attribution (insta, linkedin, mail)-->
         <!-- <a href="https://www.flaticon.com/uicons">Flaticon</a>-->
         <!--Font From Google API-->
@@ -49,7 +50,7 @@
                 </div>
             </div>
             <div class = "hamburgerIcon">
-                <img src="images/hamburger-menu.png" class="mobileMenu" alt="Hamburger Menu Icon"> 
+                <img src="images/hamburger-menu.png" class="mobileMenu" alt="Hamburger Menu Icon">
             </div>
         </div>
         <div class="overlayMobileNavContainer">
@@ -71,23 +72,60 @@
                 </a>
             </div>
         </div>
-        <div class="boxContainer">
-            <div class="box">
-                <img src="images/jackFishing.jpg" alt="Wahoo Timer" class="boxImage WahooTimer">
-                <div class="boxContent" id="WahooTimer">
-                    <h2>Wahoo Timer</h2>
-                    <p>A Fishing Pomodoro Timer</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/workingOnSite.jpg" alt="Creating Jack-Thorp.com" class="boxImage CloudResumeChallenge">
-                <div class="boxContent" id="CloudResumeChallengeBox">
-                    <h2>Creating Jack-Thorp.com</h2>
-                    <p>AWS Cloud Resume Challenge</p>
-                </div>
-            </div>
+        <div class = "pageTitle">
+            <h2 class = "pageTitleContainter">Wahoo Timer</h2>
         </div>
+        <div class="projectInfoContainer">
+            <div class = "projectParagraph">
+                Plain clocks are overrated! Just Kidding! But personally, I have found the Pomodoro Technique as a powerful way to help me stay "locked in" 
+                and focused on important work. But having just a clock is a tad boring... so I added a some gamification to turn a simple timer 
+                into a fun, engaging challenge! So cast a line with this fishing Pomodoro, one sprint at a time!
+            </div>
+            <div class="wrapper">
+                <div class="left">
+                  <canvas id="scene" width="160" height="120"></canvas>
+                  <div id="timer">1:00</div>
+                  <!-- CONFIGURATION PANEL -->
+                  <div id="config">
+                    <label>
+                      Session length:
+                      <select id="durationSelect">
+                        <option value="0.083333">5 sec (demo)</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">60 min</option>
+                      </select>
+                    </label>
+                    <label>
+                      Boat name:
+                      <input id="boatNameInput" type="text" placeholder="Boat" maxlength="25" />
+                    </label>
+                    <label>
+                      Notes:
+                      <input id="notesInput" type="text" placeholder="Whatcha Working On?" maxlength="60" />
+                    </label>
+                    <button id="startBtn">Start Session</button>
+                  </div>
+                </div>
+            
+            <!-- CATCH OF THE DAY CARD -->
+            <div id="catchCard">
+                <div id="boatTitle"></div>
+                    <h3 id="catchTableTitle">Catch of the Day</h3>
+                    <table id="catchTable">
+                        <thead>
+                        <tr><th>Fish</th><th>Weight&nbsp;(lb)</th><th>Notes</th></tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- div for fish caught banner -->
+            <div id="banner"></div>
+        </div>
+        <div class="bottomSpacer"></div>
     </div>
-    <script src = "JS/Project Page.js"></script>
+    <script src = "JS/Individual Project.js"></script>
+    <script src = "JS/Individual Project - Wahoo Timer.js"></script>
 </body>
 </html>
