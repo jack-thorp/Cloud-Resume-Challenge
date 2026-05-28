@@ -83,36 +83,51 @@ function formatTime(sec){
 }
 
 /* Fish Specs */
-const fishTypes=[
-  {name:'Blue Marlin',min:150,max:700},
-  {name:'White Marlin',min:40,max:150},
-  {name:'Yellowfin Tuna',min:30,max:200},
-  {name:'Bluefin Tuna',min:150,max:700},
-  {name:'Sailfish',min:40,max:90},
-  {name:'King Mackerel',min:10,max:70},
-  {name:'Tarpon',min:60,max:170},
-  {name:'Red Snapper',min:5,max:50},
-  {name:'Spanish Mackerel',min:2,max:10},
-  {name:'Redfish',min:5,max:60},
-  {name:'Wahoo',min:15,max:110},
-  {name:'Barracuda',min:10,max:50},
-  {name:'Mahi',min:10,max:55}
+const fishTypes = [
+  { name: 'Blue Marlin', min: 150, max: 700, img: 'images/fishes/blue marlin.png' },
+  { name: 'White Marlin', min: 40, max: 150, img: 'images/fishes/white marlin.png' },
+  { name: 'Yellowfin Tuna', min: 30, max: 200, img: 'images/fishes/yellowfin tuna.png' },
+  { name: 'Bluefin Tuna', min: 150, max: 700, img: 'images/fishes/bluefin tuna.png' },
+  { name: 'Sailfish', min: 40, max: 90, img: 'images/fishes/sailfish.png' },
+  { name: 'King Mackerel', min: 10, max: 70, img: 'images/fishes/king mackerel.png' },
+  { name: 'Tarpon', min: 60, max: 170, img: 'images/fishes/tarpon.png' },
+  { name: 'Red Snapper', min: 5, max: 50, img: 'images/fishes/red snapper.png' },
+  { name: 'Spanish Mackerel', min: 2, max: 10, img: 'images/fishes/spanish mackerel.png' },
+  { name: 'Redfish', min: 5, max: 60, img: 'images/fishes/redfish.png' },
+  { name: 'Wahoo', min: 15, max: 110, img: 'images/fishes/wahoo.png' },
+  { name: 'Barracuda', min: 10, max: 50, img: 'images/fishes/barracuda.png' },
+  { name: 'Mahi', min: 10, max: 55, img: 'images/fishes/mahi.png' }
 ];
-function showCatch(){
-  const f=fishTypes[Math.floor(Math.random()*fishTypes.length)];
-  const weight=(Math.random()*(f.max-f.min)+f.min).toFixed(1);
-  const who=boatName||'You';
-  banner.innerHTML=`${who} caught a ${weight} lb ${f.name}! <button class="closeBtn">×</button>`;
-  banner.style.display='block';
-  banner.querySelector('.closeBtn').onclick=()=>banner.style.display='none';
-  setTimeout(()=>{banner.style.display='none';},10000);
+function showCatch() {
+  const f = fishTypes[Math.floor(Math.random() * fishTypes.length)];
+  const weight = (Math.random() * (f.max - f.min) + f.min).toFixed(1);
+  const who = boatName || 'You';
+
+  banner.innerHTML = `
+    <button class="closeBtn" aria-label="Close catch banner">×</button>
+
+    <img 
+      class="caughtFishImg" 
+      src="${f.img}" 
+      alt="${f.name} pixel art"
+    >
+
+    <div class="catchMessage">
+      ${who} caught a ${weight} lb ${f.name}!
+    </div>
+  `;
+
+  banner.style.display = 'flex';
+
+  banner.querySelector('.closeBtn').onclick = () => {
+    banner.style.display = 'none';
+  };
 
   const notes = notesInput.value.trim();
   notesInput.value = '';
 
-  // Adding Fish Caught to Log
-  const row=document.createElement('tr');
-  row.innerHTML=`<td>${f.name}</td><td>${weight}</td><td>${notes}</td>`;
+  const row = document.createElement('tr');
+  row.innerHTML = `<td>${f.name}</td><td>${weight}</td><td>${notes}</td>`;
   catchTableBody.append(row);
 }
 
