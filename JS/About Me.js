@@ -14,12 +14,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const projectsButtonMobile = document.querySelector('.projectButton');
 
     const aboutMeMainPic = document.getElementById('aboutMeMainPic');
-    const stripPics = Array.from(document.getElementsByClassName('stripPic'));
+    const stripPics = document.querySelectorAll('.stripPic');
+    let currentStripPic = 0;
+
+    setInterval(() => {
+        stripPics[currentStripPic].classList.remove('active');
+
+        currentStripPic = (currentStripPic + 1) % stripPics.length;
+
+        stripPics[currentStripPic].classList.add('active');
+    }, 4000);
     let isScrolled = false;
     let isMobileScreen = window.innerWidth <= 600;
     let wasMobileScreen = isMobileScreen;
-    let carouselInterval;
-    handleImageCarousel();
 
 //adding button links
     homeButton.addEventListener('click', () => {
@@ -103,13 +110,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const currentWidth = window.innerWidth;
         wasMobileScreen = isMobileScreen;
         isMobileScreen = currentWidth <= 600;
-
-        //update photostrip piece when changing screen size
-        if (!wasMobileScreen && isMobileScreen) {
-            handleImageCarousel();
-        } else if (wasMobileScreen && !isMobileScreen) {
-            handleImageCarousel(false);
-        }
     });
     
      //adds enlarge/minimzie effect to main pic when scrolling up/down
